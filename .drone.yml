@@ -11,3 +11,13 @@ steps:
       from_secret: docker_username
     password:
       from_secret: docker_password
+- name: quay-curl
+  image: plugins/docker
+  settings:
+    repo: tlemarchand/curl
+    tags: latest
+    username:
+      from_secret: quay_username
+    password:
+      from_secret: quay_password
+    registry: quay.io
