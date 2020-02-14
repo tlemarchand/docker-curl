@@ -14,7 +14,7 @@ steps:
 - name: quay-curl
   image: plugins/docker
   settings:
-    repo: tlemarchand/curl
+    repo: quay.io/tlemarchand/curl
     tags: latest
     username:
       from_secret: quay_username
